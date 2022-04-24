@@ -1,2 +1,5 @@
 print('Hello, world!')
-print(1 + 15)
+
+for i in [1, 2, 3]: 
+    print(1 + i)
+
