@@ -1,9 +1,9 @@
-print('Hello, world!')
+import pyautogui as pag
 
-for i in [1, 2, 3]: 
-    print(1 + i)
-    # for a in [1, 2, 3]: 
-    #     print(1 + i + a)
-for a in [1, 2, 3]: 
-    print(1 + i + a)
+savepath = './test/image_1.png'
 
+icon_loc = pag.locateOnScreen(savepath)
+x, y = pag.center(icon_loc)
+
+pag.moveTo(x, y, 1)
+pag.doubleClick(x, y)
